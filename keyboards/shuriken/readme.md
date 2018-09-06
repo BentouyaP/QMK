@@ -6,6 +6,8 @@ Keyboard Maintainer: [Bentouya_P](https://github.com/BentouyaP) [@Bentouya_P](ht
 Hardware Supported: Shuriken PCB, Pro Micro ATmega32u4  
 Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerber/Shuriken/)
 
+[Build Guide(JP)](https://github.com/BentouyaP/Doc)
+
 Make example for this keyboard (after setting up your build environment):
 
     make shuriken:default
