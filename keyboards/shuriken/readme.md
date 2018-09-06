@@ -4,7 +4,7 @@
 
 Keyboard Maintainer: [Bentouya_P](https://github.com/BentouyaP) [@Bentouya_P](https://twitter.com/Bentouya_P)  
 Hardware Supported: Shuriken PCB, Pro Micro ATmega32u4  
-Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerber/Shuriken)
+Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerber/Shuriken/)
 
 Make example for this keyboard (after setting up your build environment):
 
