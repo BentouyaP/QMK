@@ -1,6 +1,6 @@
 # Kabuto28
 
-![Kodachi40](https://i.imgur.com/xq9PtQT.jpg)
+![Kabuto28](https://i.imgur.com/1h7EbrR.jpg)
 
 Keyboard Maintainer: [Bentouya_P](https://github.com/BentouyaP) [@Bentouya_P](https://twitter.com/Bentouya_P)  
 Hardware Supported: Kabuto28 PCB, Pro Micro ATmega32u4  
