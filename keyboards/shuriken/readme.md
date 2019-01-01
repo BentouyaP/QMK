@@ -1,18 +1,15 @@
-# Kodachi40
+# Shuriken
 
-![Kodachi40](https://i.imgur.com/xq9PtQT.jpg)
+![Shuriken](https://i.imgur.com/tgNt7oY.jpg)
 
 Keyboard Maintainer: [Bentouya_P](https://github.com/BentouyaP) [@Bentouya_P](https://twitter.com/Bentouya_P)  
-Hardware Supported: Kodachi40 PCB, Pro Micro ATmega32u4  
-Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerbers/Kodachi40)
+Hardware Supported: Shuriken PCB, Pro Micro ATmega32u4  
+Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerber/Shuriken/)
 
-<<<<<<< HEAD
-=======
 [Build Guide(JP)](https://github.com/BentouyaP/Doc)
 
->>>>>>> be6d80995d696deea2030fde693e527034482720
 Make example for this keyboard (after setting up your build environment):
 
-    make kodachi40:default
+    make shuriken:default
 
 See [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) then the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information.
