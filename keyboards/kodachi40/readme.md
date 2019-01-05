@@ -4,7 +4,7 @@
 
 Keyboard Maintainer: [Bentouya_P](https://github.com/BentouyaP) [@Bentouya_P](https://twitter.com/Bentouya_P)  
 Hardware Supported: Kodachi40 PCB, Pro Micro ATmega32u4  
-Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerbers/Kodachi40)
+Hardware Availability: Order your own [yourself](https://github.com/BentouyaP/Gerber)
 
 
 [Build Guide(JP)](https://github.com/BentouyaP/Doc)
