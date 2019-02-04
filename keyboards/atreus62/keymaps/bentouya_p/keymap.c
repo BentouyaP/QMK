@@ -210,53 +210,53 @@ const uint16_t PROGMEM fn_actions[] = {
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
     switch(id) {
     case 0: //Ctrl + K, Ctrl + D
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), T(K), T(D), END); 
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), T(K), U(LCTL), D(LCTL), T(D), U(LCTL), END); 
         }
         break;
     case 1: //Ctrl + K, Ctrl + C 
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), T(K), T(C), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), T(K), U(LCTL), D(LCTL), T(C), U(LCTL), END);
         }
         break;
     case 2: //Ctrl + K, Ctrl + U
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), T(K), T(U), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), T(K), U(LCTL), D(LCTL), T(U), U(LCTL), END);
         }
         break;
     case 3: //F2
-        if (record->event.pressed) {
+        if (record->event.pressed) {// on keydown
             return MACRO(T(F2), END);
         }
         break;
     case 4: //Shft + F2
-        if (record->event.pressed) {
-            return MACRO(D(LSFT), T(F2), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LSFT), T(F2), U(LSFT), END);
         }
         break;
     case 5: //Ctrl + F4
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), T(F4), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), T(F4), U(LCTL), END);
         }
         break;
     case 6: //F12
-        if (record->event.pressed) {
+        if (record->event.pressed) {// on keydown
             return MACRO(T(F12), END);
         }
         break;
     case 7: //Ctrl+Alt+PageDown
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), D(LALT), T(PGDN), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), D(LALT), T(PGDN), U(LALT), U(LCTL), END);
         }
         break;
     case 8: //Ctrl+Alt+PageUp
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), D(LALT), T(PGUP), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), D(LALT), T(PGUP), U(LALT), U(LCTL), END);
         }
         break;
     case 9: //Ctrl + M, Ctrl + M
-        if (record->event.pressed) {
-            return MACRO(D(LCTL), T(M), T(M), END);
+        if (record->event.pressed) {// on keydown
+            return MACRO(D(LCTL), T(M), U(LCTL), D(LCTL), T(M), U(LCTL), END);
         }
         break;
     }
