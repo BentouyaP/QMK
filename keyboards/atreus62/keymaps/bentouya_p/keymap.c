@@ -31,10 +31,11 @@ enum atreus62_keycodes {
 #define XXXXXXX KC_NO
 
 // Custom
-#define SFT_ENT SFT_T(KC_ENT)  // Tap for Enter, hold for Shift
-#define FNC MO(_FUNCTION)  // Momentarily turn on FUNCTION layer
-#define KANA KC_INT2  // JIS Katakana/Hiragana
-#define E_J KC_LANG5  // JIS Zenkaku/Hankaku
+#define SFT_ENT SFT_T(KC_ENT)  	// Tap for Enter, hold for Shift
+#define FNC MO(_FUNCTION)  	// Momentarily turn on FUNCTION layer
+#define KANA KC_INT2 		// JIS Katakana/Hiragana
+#define E_J LALT(KC_GRV)  	// JIS Zenkaku/Hankaku //Alt + `
+
 //UnUse
 //#define CTL_ESC CTL_T(KC_ESC)  // Tap for Escape, hold for Control
 //#define CTL_ENT CTL_T(KC_ENT)  // Tap for Enter, hold for Control
@@ -160,8 +161,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      | M15  | M16  |      |      | M17  |      |      |      | Vol- | Vol+ |      |      |
  * `-------------------------------------------------------------------------------------------------'
 //Macros:
-//M(0)   F2				//M(1)   Shft + F2
-//M(2)   Shft + F2			//M(3)   Ctrl + K, Ctrl + C
+//M(0)   F2				//M(1)   Ctrl + F4
+//M(2)   Alt  + F2			//M(3)   Ctrl + K, Ctrl + C
 //M(4)   Ctrl + K, Ctrl + U		//M(5)   F12
 //M(6)   Ctrl + Shft + S		//M(7)   Ctrl + M, Ctrl + M
 //M(8)   Ctrl + Alt + PageDown		//M(9)   Ctrl + Alt + PageUp
@@ -218,9 +219,9 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
             return MACRO(D(LCTL), T(F4), U(LCTL), END);
         }
         break;
-    case 2: //M(2) //Shft + F2
+    case 2: //M(2) //Alt + F2
         if (record->event.pressed) {// on keydown
-            return MACRO(D(LSFT), T(F2), U(LSFT), END);
+            return MACRO(D(LALT), T(F2), U(LALT), END);
         }
         break;
     case 3: //M(3) //Ctrl + K, Ctrl + C
