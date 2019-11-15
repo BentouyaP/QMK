@@ -24,10 +24,6 @@ enum rising60_keycodes {
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
-// Layer Key
-#define FNC MO(_FUNCTION)  	// Momentarily turn on FUNCTION layer
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty */
