@@ -1,0 +1,109 @@
+{
+    "keyboard_name": "Kodachi40_pico",
+    "manufacturer": "Bentouya_P",
+    "maintainer": "qmk",
+    "bootloader": "rp2040",
+    "usb": {
+        "vid": "0x445A",
+        "pid": "0x2260",
+        "device_version": "0.0.1"
+    },
+    "features": {
+        "backlight": false,
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "rgblight": true
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "matrix_pins": {
+        "cols": ["GP18", "GP19", "GP20", "GP21", "GP22", "GP23", "GP8", "GP9", "GP10", "GP11", "GP12", "GP13"],
+        "rows": ["GP6", "GP7", "GP24", "GP25"]
+    },
+    "diode_direction": "COL2ROW",
+    "rgblight": {
+        "saturation_steps": 8,
+        "brightness_steps": 8,
+        "led_count": 4,
+        "sleep": true,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP5"
+    },
+    "processor": "RP2040",
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "w": 1.5},
+                {"matrix": [0, 1], "x": 1.5, "y": 0},
+                {"matrix": [0, 2], "x": 2.5, "y": 0},
+                {"matrix": [0, 3], "x": 3.5, "y": 0},
+                {"matrix": [0, 4], "x": 4.5, "y": 0},
+                {"matrix": [0, 5], "x": 5.5, "y": 0},
+                {"matrix": [0, 6], "x": 6.5, "y": 0},
+                {"matrix": [0, 7], "x": 7.5, "y": 0},
+                {"matrix": [0, 8], "x": 8.5, "y": 0},
+                {"matrix": [0, 9], "x": 9.5, "y": 0},
+                {"matrix": [0, 10], "x": 10.5, "y": 0},
+                {"matrix": [0, 11], "x": 11.5, "y": 0},
+
+                {"matrix": [1, 0], "x": 0, "y": 1, "w": 1.25},
+                {"matrix": [1, 1], "x": 1.25, "y": 1},
+                {"matrix": [1, 2], "x": 2.25, "y": 1},
+                {"matrix": [1, 3], "x": 3.25, "y": 1},
+                {"matrix": [1, 4], "x": 4.25, "y": 1},
+                {"matrix": [1, 5], "x": 5.25, "y": 1},
+                {"matrix": [1, 7], "x": 6.75, "y": 1},
+                {"matrix": [1, 8], "x": 7.75, "y": 1},
+                {"matrix": [1, 9], "x": 8.75, "y": 1},
+                {"matrix": [1, 10], "x": 9.75, "y": 1},
+                {"matrix": [1, 11], "x": 10.75, "y": 1, "w": 1.75},
+
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2},
+                {"matrix": [2, 4], "x": 4, "y": 2},
+                {"matrix": [2, 5], "x": 5, "y": 2},
+                {"matrix": [2, 6], "x": 6, "y": 2},
+                {"matrix": [2, 7], "x": 7, "y": 2},
+                {"matrix": [2, 8], "x": 8, "y": 2},
+                {"matrix": [2, 9], "x": 9, "y": 2},
+                {"matrix": [2, 10], "x": 10, "y": 2},
+                {"matrix": [2, 11], "x": 11, "y": 2, "w": 1.5},
+
+                {"matrix": [3, 0], "x": 0, "y": 3, "w": 1.25},
+                {"matrix": [3, 1], "x": 1.25, "y": 3},
+                {"matrix": [3, 2], "x": 2.25, "y": 3},
+                {"matrix": [3, 3], "x": 3.25, "y": 3, "w": 1.25},
+
+                {"matrix": [3, 5], "x": 4.5, "y": 3, "w": 2.25},
+
+                {"matrix": [3, 7], "x": 6.75, "y": 3, "w": 2},
+
+                {"matrix": [3, 9], "x": 8.75, "y": 3, "w": 1.25},
+                {"matrix": [3, 10], "x": 10, "y": 3, "w": 1.25},
+                {"matrix": [3, 11], "x": 11.25, "y": 3, "w": 1.25}
+            ]
+        }
+    }
+}
